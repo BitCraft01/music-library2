@@ -6,7 +6,7 @@ function SearchBar (props) {
     return (
         <div>
             <form>
-                <input type="text" placeholder="Enter a search term here" />
+                <input type="text" placeholder="Search Here" onChange={(e) => props.handleSearch(e, e.target.value)} />
                 <input type="submit" />
             </form>
         </div>
